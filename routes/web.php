@@ -1,5 +1,6 @@
 <?php
 
+// use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/layout.php', function () {
+//     return view('layout');
+// });
+
+// Route::get('/index','HomeController@index')->name('index');
+
+// Route::get('/signin' , 'HomeController@signin')->name('signin');
+
+// Route::get('/login' , 'HomeController@login')->name('login');
+
+Route::get('/layout',function(){
+    return view('layout');
+});
+
+Route::get('/login',function(){
+    return view('login');
 });
