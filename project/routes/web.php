@@ -1,7 +1,7 @@
 <?php
 
-// use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Routing\RouteCompiler;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/layout.php', function () {
-//     return view('layout');
+// Route::get('/', function () {
+//     return view('welcome');
 // });
 
-// Route::get('/index','HomeController@index')->name('index');
 
-// Route::get('/signin' , 'HomeController@signin')->name('signin');
-
-Route::get('/login' , 'HomeController@login')->name('login');
-
-Route::get('/test',function(){
-    return view('layout');
-});
+Route::get('/index','HomeController@index')->name('index');
+Route::get('/login','HomeController@login')->name('login');

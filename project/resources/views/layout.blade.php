@@ -250,7 +250,7 @@
           <ul class="list-unstyled">
 
 
-            <li class="sidebar-item"><a class="sidebar-link" href="{{ route('index') }}">
+            <li class="sidebar-item"><a class="sidebar-link" href="{{ route('login') }}">
                 <svg class="svg-icon svg-icon-sm svg-icon-heavy">
 
                 </svg><span>login</span></a></li>
